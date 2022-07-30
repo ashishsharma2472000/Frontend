@@ -1,0 +1,50 @@
+.logobar{
+    background-color:#CE0505  ;
+    height: 75px;
+    
+}
+
+
+#e{
+    width: 47px;
+    height: 47px;
+    margin: 15px 740px 15px 0;
+    border-radius: 50%;
+    background: #FFFFFF ;
+    display: inline-block;
+    font: normal normal 600 33px/50px Poppins;
+    font-size: 38px;
+    text-align: center;
+    color: #eb2929;
+    position: absolute;
+    left: 100px;
+    top: 4px;
+
+}
+
+#l{
+    position: absolute;
+    left: 1140px;
+    top: 33px;
+    color: #FFFFFF;
+    font-family: poppins;
+    font-size: large;
+}
+
+#c{
+    margin: 0px 0 0 10px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: solid 1px #FFFFFF;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    left: 1200px;
+    top: 28px;
+    color: #FFFFFF;
+}
+
+.login-help-link link{
+    float: inline-end;
+}

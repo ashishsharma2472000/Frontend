@@ -1,0 +1,313 @@
+.logobar{
+    background-color:#CE0505  ;
+    height: 75px;
+    
+}
+
+
+#e{
+    width: 47px;
+    height: 47px;
+    margin: 15px 740px 15px 0;
+    border-radius: 50%;
+    background: #FFFFFF ;
+    display: inline-block;
+    font: normal normal 600 33px/50px Poppins;
+    font-size: 38px;
+    text-align: center;
+    color: #eb2929;
+    position: absolute;
+    left: 120px;
+    top: 7px;
+
+}
+
+#l{
+    position: absolute;
+    left: 1150px;
+    top: 35px;
+    color: #FFFFFF;
+    
+}
+
+#c{
+    margin: 0px 0 0 10px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 3px;
+    border: solid 1px #FFFFFF;
+    font-family: poppins;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    left: 1200px;
+    top: 28px;
+    color: #FFFFFF;
+}
+
+.heading{
+    width: 514px;
+    height: 51px;
+    font-family: poppins;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #192F60;
+    opacity: 1;
+    position: absolute;
+    left: 120px;
+    top:100px
+}
+
+.rectangle{
+    width: 240px;
+    height: 578px;
+    position: absolute;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    left: 120px;
+    top: 160px;
+
+}
+
+#filters{
+    text-align: left;
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    position: absolute;
+    left: 20px;
+
+}
+
+#sl{
+    text-align: left;
+    font: normal normal normal 17px/21px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    position: absolute;
+    left: 20px;
+    top: 30px
+}
+
+#selectl{
+    width: 210px;
+    height: 35px;
+    font-size: 15px;
+    margin: 10px 0 20px 0px;
+    padding: 8px 16.7px 7px;
+    border-radius: 5px;
+    border: solid 1px #8c96ab;
+    color: #8c96ab;
+    position: absolute;
+    left: 15px;
+    top: 52px
+}
+
+#cui{
+    text-align: left;
+    font: normal normal 600 18px/20px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    position: absolute;
+    left: 20px;
+    top: 110px
+    }
+
+ .options{
+     margin: 2px 0 5px 17px;
+     font-family: poppins;
+     font-size: 17px;
+     color: #8c96ab;
+     position: relative;
+     top:135px;
+ }   
+
+ #cot{
+    font: normal normal 600 18px/20px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    position: absolute;
+    left: 19px;
+    top: 290px
+ }
+
+ .check{
+     margin: 2px 0 5px 17px;
+     font-family: poppins;
+     font-size: 17px;
+     color: #8c96ab;
+     position: relative;
+     top:160px
+ }
+
+ #sort{
+    text-align: left;
+    font: normal normal 600 18px/20px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    position: absolute;
+    left: 20px;
+    top: 497px
+}
+
+.sor{
+    margin: 2px 0 5px 17px;
+     font-family: poppins;
+     font-size: 17px;
+     color: #8c96ab;
+     position: relative;
+     top:185px
+}
+
+.rec{
+
+    width: 700px;
+    height: 270px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-bottom: 35px;
+    position: relative;
+    left: 450px;
+    top: 63px;
+   
+    
+
+}
+
+
+#tbcc{
+    top: 234px;
+    left: 614px;
+    width: 303px;
+    height: 43px;
+    text-align: left;
+    font: normal normal 600 30px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    position: absolute;
+    left: 200px;
+    top: 20px
+}
+
+#f{
+    width: 500px;
+    height: 23px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    position: absolute;
+    left: 205px;
+    top: 65px ;
+}
+
+#s{
+    width: 500px;
+    height: 23px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: poppins;
+    letter-spacing: 0px;
+    color: #636F88;
+    opacity: 1;
+    position: absolute;
+    left: 205px;
+    top: 89px ;
+
+}
+.partition{
+    width: 640px;
+    height: 0;
+    margin: 15px 0 0 10px;
+    border: solid 1px #dedfe5;
+    position: absolute;
+    top: 140px;
+    left: 25px;
+}
+#ccf{
+    width: 1000px;
+    height: 12px;
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #636F88;
+    opacity: 1;
+    position: absolute;
+    left: 40px;
+    top: 179px ;
+
+}
+
+
+
+#rup{
+    width: 1000px;
+    height: 9px;
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    color: #636F88;
+    opacity: 1;
+    position: absolute;
+    left: 40px;
+    top: 214px ;
+
+}
+
+.img1{
+        display: block;
+        width: 120px;
+        height: 110px;
+        object-fit: cover;
+        border-radius: 20px;
+        margin: 0px 10px 10px 5px;
+        margin-top: 25px;
+        margin-left: 50px;
+        position: relative;
+        top: 25px;
+
+    }
+
+
+
+
+ .Item {
+    width: 80%;
+    height: 150px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+.pagination {
+    display: inline-block;
+    margin-left: 630px;
+    margin-top: 40px;
+}
+
+.pagination a {
+    color: gray;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: solid 1px gray;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.noData {
+    color: red;
+    font-size: 30px;
+    font-family: cursive;
+    text-align: center;
+}
