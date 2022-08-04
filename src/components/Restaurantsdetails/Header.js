@@ -131,7 +131,27 @@ export default function () {
 
  }
 
+const componentClicked = ()=>{
+   {
+    FB.init({
+      appId      : '586945262968949',
+      cookie     : true,
+      xfbml      : true,
+      version    : '{api-version}'
+    });
+      
+    FB.AppEvents.logPageView();   
+      
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+}
 
  
  
@@ -219,12 +239,13 @@ export default function () {
 
             </form>
             <FacebookLogin
-              appId="1362878057454279"
+              appId="586945262968949"
               fields="name,email,picture"
-              // onClick={componentClicked}
+              onClick={componentClicked}
               callback={()=>responseFacebook}
               icon="fa-facebook"
                />
+
                <h2>
                <GoogleLogin
                 clientId="973880459978-3bqve49jc2v0b4sj2b60a2runv41j6rl.apps.googleusercontent.com"
