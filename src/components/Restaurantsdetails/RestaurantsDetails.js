@@ -47,7 +47,7 @@ export default function RestaurantsDetail() {
       try{
 
         let orderData;
-        orderData= await fetch('http://localhost:6767/pay',{method:'POST',headers:{'Content-Type':'application/json'},
+        orderData= await fetch('https://zomato-clone-4.herokuapp.com/pay',{method:'POST',headers:{'Content-Type':'application/json'},
         body:JSON.stringify({amount:totalPrice})
       }).then(resp=>resp.json())
   
@@ -66,7 +66,7 @@ export default function RestaurantsDetail() {
             },
             handler:function(response){
               // call api  that would save transaction in db
-              fetch('http://localhost:6767/pay/save',{method:'POST',
+              fetch('https://zomato-clone-4.herokuapp.com/pay/save',{method:'POST',
               headers:{'Content-Type':'application/json'},
               body:JSON.stringify({
                 razorpay_order_id:response.razorpay_order_id,
@@ -90,7 +90,7 @@ export default function RestaurantsDetail() {
 
     useEffect(()=>{
 
-      fetch(`http://localhost:6767/restaurant/details/${rName}`,{method:"GET"})
+      fetch(`https://zomato-clone-4.herokuapp.com/restaurant/details/${rName}`,{method:"GET"})
       .then(response=>response.json())
       .then(data=>{
 
@@ -105,7 +105,7 @@ export default function RestaurantsDetail() {
 
 
     const fetchMenu=()=>{
-      fetch(`http://localhost:6767/menu/${rName}`,{method:"GET"})
+      fetch(`https://zomato-clone-4.herokuapp.com/menu/${rName}`,{method:"GET"})
       .then(response=>response.json())
       .then(data=>{setMenu(data.data) })
     }

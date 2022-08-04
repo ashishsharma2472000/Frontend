@@ -72,7 +72,7 @@ export default function Filter2() {
         console.log('register function')
         const{name,email,phoneno,password,confirm} = user
         if(name && email && phoneno && password && (password == confirm)){
-        axios({url:'http://localhost:6767/signUp',
+        axios({url:'https://zomato-clone-4.herokuapp.com/signUp',
         method:'post',
         headers:{'Content-Type':'Application/json'},
         data: user}).then(response=>{console.log(response);alert(response.data.message);setCreateModal(false)})
@@ -107,7 +107,7 @@ export default function Filter2() {
         // const{email,password} = user
         e.preventDefault()
         console.log(login)
-        axios({url:'http://localhost:6767/login',
+        axios({url:'https://zomato-clone-4.herokuapp.com/login',
         method:'post',
         headers:{'Content-Type':'Application/json'},
         data: login}).then(response=>{alert(response.data.message);console.log(response);setLoginModal(false)})
@@ -127,7 +127,7 @@ export default function Filter2() {
     useEffect(()=>{
 
 
-        fetch(`http://localhost:6767/restaurant/filter/${currentPageno}`,requestoption)
+        fetch(`https://zomato-clone-4.herokuapp.com/restaurant/filter/${currentPageno}`,requestoption)
         .then(request=>request.json())
         .then(data=>{
             setRestaurants(data.data);
@@ -139,7 +139,7 @@ export default function Filter2() {
 
 
     useEffect(()=>{
-        fetch('http://localhost:6767/location',{method:'GET'})
+        fetch('https://zomato-clone-4.herokuapp.com/location',{method:'GET'})
         .then(response=>response.json())
         .then(data=> setlocations(data.data))
     },[])

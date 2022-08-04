@@ -64,7 +64,7 @@ export default function () {
     console.log('register function')
     const{name,email,phoneno,password,confirm} = user
     if(name && email && phoneno && password && (password == confirm)){
-    axios({url:'http://localhost:6767/signUp',
+    axios({url:'https://zomato-clone-4.herokuapp.com/signUp',
     method:'post',
     headers:{'Content-Type':'Application/json'},
     data: user}).then(response=>{console.log(response);
@@ -102,7 +102,7 @@ export default function () {
     // const{email,password} = user
     e.preventDefault()
     console.log(login)
-    axios({url:'http://localhost:6767/login',
+    axios({url:'https://zomato-clone-4.herokuapp.com/login',
     method:'post',
     headers:{'Content-Type':'Application/json'},
     data: login}).then(response=>{alert(response.data.message);
