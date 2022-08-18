@@ -3,6 +3,7 @@ import React from 'react'
 import '../../style/Filter2.css'
 
 import { useState, useEffect } from 'react'
+import { useParams } from 'react-router-dom'
 import '../../style/Header.css'
 import ReactDOM from 'react-dom';
 import Modal from 'react-modal'
@@ -32,7 +33,8 @@ export default function Filter2() {
         sort:1
     })
 
-
+    const params = useParams();
+    console.log(params.mealtypeName)
 
     const[locations,setlocations] =useState([])
     const[Restaurants,setRestaurants]=useState([])
