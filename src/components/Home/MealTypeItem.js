@@ -6,7 +6,7 @@ import Filter2 from '../Restaurantsdetails/Filter';
 import {useNavigate} from 'react-router-dom'
 
 export default function MealTypeItem(props) {
-    const {name,content,image}=props.item;
+    const {name,_id,content,image}=props.item;
     console.log(props.item)
     const[currentPageno,setCurrentPageno]=useState(1)
     const[Restaurants,setRestaurants]=useState([])
@@ -37,7 +37,7 @@ useEffect(()=>{
 },[filter])
 
 const handleNavigate=()=>{
-    naviagate(`/filter/${name}`)
+    naviagate(`/filter/${_id}`)
 }
 
   return (

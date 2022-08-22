@@ -25,6 +25,9 @@ const customStyles = {
 
 export default function Filter2() {
 
+  const params = useParams();
+  const [mealtypeId, setMealtypeId]=useState(params.mealtypeId)
+
     const[filter,setfilter]=useState({
         city_id:'',
         cuisine:[],
@@ -33,7 +36,17 @@ export default function Filter2() {
         sort:1
     })
 
-    const params = useParams();
+    useEffect(()=>{
+      fetch(`http://localhost:6767/restaurant/filter/${mealtypeId}`,requestoption)
+      .then(request=>request.json())
+      .then(data=>{
+          setRestaurants(data.data);
+          setPageCount(data.totalRecords/2)    
+      })
+          
+      
+    },[])
+    
     console.log(params.mealtypeName)
 
     const[locations,setlocations] =useState([])

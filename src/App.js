@@ -15,7 +15,7 @@ function App() {
         <Route  path='/' element={<Home/>} />
         <Route  path='/details/:rName' element={<RestaurantDetails/>} />
         <Route path='/filter' element={<Filter/>}>
-        <Route path=':mealtypeName' element={<Filter/>}/>
+        <Route path=':mealtypeId' element={<Filter/>}/>
           </Route>
 
       </Routes>      
