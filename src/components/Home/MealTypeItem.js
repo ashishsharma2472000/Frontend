@@ -23,18 +23,18 @@ export default function MealTypeItem(props) {
 
 
 
-useEffect(()=>{
+// useEffect(()=>{
 
 
-    fetch(`http://localhost:6767/restaurant/filter/${currentPageno}`,{method:"GET"})
-    .then(request=>request.json())
-    .then(data=>{
-        setRestaurants(data.data);
-        setPageCount(data.totalRecords/2)    
-    })
+//     fetch(`http://localhost:6767/restaurant/filter/${currentPageno}`,{method:"GET"})
+//     .then(request=>request.json())
+//     .then(data=>{
+//         setRestaurants(data.data);
+//         setPageCount(data.totalRecords/2)    
+//     })
         
 
-},[filter])
+// },[filter])
 
 const handleNavigate=()=>{
     naviagate(`/filter/${_id}`)
